@@ -129,7 +129,12 @@ public class main {
     }
 
     public static void updateATask(Scanner input, TaskManager manager){
-       
+        int index = getTheIndex(input, manager, "Ingrese el indice de la tarea a actualizar: ");
+        System.out.println("Ingrese el nuevo título (si no lo va a actualizar aprete 'enter'): ");
+        String newTitle = input.nextLine();
+        System.out.println("Ingrese la nueva descripción (si no lo va a actualizar aprete 'enter'): ");
+        String newDescription = input.nextLine();
+        
     }
 
     public static int getTheIndex(Scanner input, TaskManager manager, String mesage){
